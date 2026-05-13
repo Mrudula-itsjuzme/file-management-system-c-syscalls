@@ -1,31 +1,103 @@
 # File Management System using C System Calls
 
-## Overview
+A low-level file-management project implemented in C using Unix system calls.
 
-A low-level file management system implemented in C, leveraging Unix system calls for efficient file operations. This project is part of a portfolio focused on system-level programming and AI systems.
+This repository focuses on understanding how file operations work closer to the operating-system layer instead of relying only on high-level library abstractions.
 
-## Project Structure
+---
 
-- **src/**: Core C source files including `main.c` and `backend.c`.
-- **docs/**: Architectural diagrams and methodology documentation.
-- **tests/**: Scripts and source files for verifying system performance and correctness.
-- **Makefile**: Build automation for compiling the project.
+## Problem statement
 
-## Implementation Details
+Most file operations are hidden behind standard library functions. This project explores direct system-call-based file handling to understand how operating systems manage files, metadata, errors, and directory operations.
 
-The system provides robust handling for:
-- File creation, reading, and writing using direct syscalls.
-- Metadata management and directory traversal.
-- Error handling for various system-level interruptions.
+---
 
-## Usage Instructions
+## Features
 
-1. Ensure a C compiler (e.g., GCC) and `make` are installed.
-2. Run `make` to compile the application.
-3. Execute the binary generated in the root directory.
+- file creation
+- file reading and writing
+- directory traversal
+- metadata handling
+- low-level error handling
+- Makefile-based compilation
+- test scripts for correctness checks
 
-## Future Enhancements
+---
 
-- Implementation of advanced file locking mechanisms.
-- Expansion of the test suite to include edge-case system behaviors.
-- Integration with external logging services.
+## System overview
+
+```text
+User Operation
+      ↓
+C Application Logic
+      ↓
+Unix System Calls
+      ↓
+Kernel File Interface
+      ↓
+Filesystem
+```
+
+---
+
+## Repository structure
+
+```text
+file-management-system-c-syscalls/
+├── src/        # C source files such as main.c and backend.c
+├── docs/       # architecture and methodology notes
+├── tests/      # test scripts and verification files
+├── Makefile    # build automation
+└── README.md
+```
+
+---
+
+## Build and run
+
+```bash
+git clone https://github.com/Mrudula-itsjuzme/file-management-system-c-syscalls.git
+cd file-management-system-c-syscalls
+
+make
+```
+
+Run the generated executable from the root directory.
+
+---
+
+## Tech stack
+
+- C
+- Unix/Linux system calls
+- GCC
+- Makefile
+- Operating-system concepts
+
+---
+
+## Learning outcomes
+
+This project demonstrates practical understanding of:
+
+- how file descriptors work
+- how read/write operations interact with the OS
+- how low-level errors are handled
+- how directory traversal works
+- how build automation is managed in C projects
+
+---
+
+## Future improvements
+
+- add file-locking support
+- expand tests for edge cases
+- add command-line flags
+- include screenshots or terminal output examples
+- add logging for failed system calls
+
+---
+
+## Author
+
+Built by [Pedamallu Sai Mrudula](https://github.com/Mrudula-itsjuzme) as part of a systems-programming and operating-systems portfolio.
