@@ -6,6 +6,19 @@ This repository focuses on understanding how file operations work closer to the 
 
 ---
 
+## Project links and evidence
+
+| Item | Link / Note |
+|---|---|
+| Repository | https://github.com/Mrudula-itsjuzme/file-management-system-c-syscalls |
+| Paper / reference | Operating-systems/system-calls learning project; no paper attached |
+| Demo video | Not uploaded yet |
+| Deployment | Not applicable; command-line C project |
+| Dataset note | No dataset required |
+| Result screenshots | Add terminal run screenshots, test outputs, or GIF demo under `docs/` when finalized |
+
+---
+
 ## Problem statement
 
 Most file operations are hidden behind standard library functions. This project explores direct system-call-based file handling to understand how operating systems manage files, metadata, errors, and directory operations.
